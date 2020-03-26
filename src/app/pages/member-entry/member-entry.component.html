@@ -1,0 +1,15 @@
+<section>
+  <h1 *ngIf="isUpdating()">Updating {{member.name}}</h1>
+  <h1 *ngIf="!isUpdating()">Adding a new clan member</h1>
+
+  <form [formGroup]="memberForm" (ngSubmit)="onSubmit(memberForm.value)">
+    <div>
+      <label for="name">
+        Name
+      </label>
+      <input id="name" type="text" formControlName="name">
+    </div>
+
+    <button class="button" type="submit">Submit</button>
+  </form>
+</section>

@@ -1,0 +1,34 @@
+header {
+  background: steelblue;
+  height: 64px;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+
+  a {
+    color: white;
+    font-size: x-large;
+  }
+}
+
+nav {
+  background: lightsteelblue;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+
+  a {
+    display: block;
+    font-size: large;
+    color: black;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:active {
+      font-weight: bold;
+    }
+  }
+}

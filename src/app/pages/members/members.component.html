@@ -1,0 +1,11 @@
+<section>
+  <h1>Your current clan members</h1>
+
+  <div *ngFor="let member of members">
+    <a [routerLink]="'/memberentry/' + member.id">{{member.name}}</a>
+  </div>
+
+  <div *ngIf="noMembers()">You have no clanmates</div>
+
+  <a routerLink="/memberentry">Add a new clanmate</a>
+</section>
